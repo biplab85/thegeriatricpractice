@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: 198 8 19;
+  --brand-shadow: 49 36 36;
+  --brand-charcoal: 39 39 39;
+  --brand-rose: 255 212 214;
+  --brand-gray: 220 220 220;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: rgb(var(--brand-charcoal));
+  background:
+    radial-gradient(900px 700px at 18% 20%, #ffffff 0%, #fff6f7 40%, transparent 65%),
+    radial-gradient(700px 600px at 82% 18%, rgba(198, 8, 19, 0.12), transparent 60%),
+    linear-gradient(120deg, rgb(var(--brand-rose)) 0%, #fff1f2 45%, #f7f7f7 100%);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.nav-link {
+  color: inherit;
+  padding: 0.35rem 0.25rem 0.55rem;
+  position: relative;
+  transition: color 220ms ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.2rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(120deg, rgb(var(--brand-red)), rgb(var(--brand-shadow)));
+  opacity: 0;
+  transform: scaleX(0.4);
+  transform-origin: center;
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: rgb(var(--brand-shadow));
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.nav-link-active {
+  color: rgb(var(--brand-red));
+}
+
+.nav-link-active::after {
+  opacity: 1;
+  transform: scaleX(1);
+  background: rgb(var(--brand-red));
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes keyframe5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@layer utilities {
+  .animate-rise {
+    animation: rise 0.7s ease-out both;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-rise-rotate {
+    animation: rise 0.7s ease-out both, keyframe5 22s linear infinite;
+  }
+}
