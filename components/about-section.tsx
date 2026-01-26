@@ -27,8 +27,8 @@ export default function AboutSection() {
                 About Medical
                 <span>
                   <img
-                    src="https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/star.png"
-                    alt=""
+                    src="/about/star.png"
+                    alt="Heart icon"
                     aria-hidden="true"
                   />
                 </span>

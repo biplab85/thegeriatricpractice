@@ -1,3 +1,6 @@
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
+
 const footerLinks = [
   { label: "Functional Screening", href: "#" },
   { label: "Cognitive Wellness", href: "#" },
@@ -7,7 +10,11 @@ const footerLinks = [
 
 export default function SiteFooter() {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section relative overflow-hidden">
+      <div
+        className="pointer-events-none absolute right-[-160px] top-[-180px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_35%_35%,rgba(255,255,255,0.8),rgba(198,8,19,0.12))] blur-[1px]"
+        aria-hidden="true"
+      />
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">
@@ -16,8 +23,19 @@ export default function SiteFooter() {
               A personal relationship with medical excellence.
             </p>
             <a className="footer-link" href="#">
-              Learn more
+              Learn more <FiArrowUpRight aria-hidden="true" focusable="false" />
             </a>
+            <div className="footer-social">
+              <a href="#" aria-label="Facebook">
+                <FaFacebookF aria-hidden="true" focusable="false" />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <FaLinkedinIn aria-hidden="true" focusable="false" />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <FaInstagram aria-hidden="true" focusable="false" />
+              </a>
+            </div>
           </div>
           <div className="footer-links">
             <h4>Consultation Services</h4>

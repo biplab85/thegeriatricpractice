@@ -1,0 +1,28 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="40" fill="#F1F5FB"/>
+  <g filter="url(#shadow)">
+    <path
+      d="M40.0007 24.6667C36.6674 20.0001 29.334 19.3334 25.334 23.3334C21.334 27.3334 20.6674 36.6667 27.334 43.3334C34.0007 50.0001 40.0007 56.0001 40.0007 56.0001C40.0007 56.0001 46.0007 50.0001 52.6674 43.3334C59.334 36.6667 58.6674 27.3334 54.6674 23.3334C50.6674 19.3334 43.334 20.0001 40.0007 24.6667Z"
+      fill="url(#paint0)"
+    />
+    <path
+      d="M31.3333 37.3333H35.3333L37.3333 32L42.6667 48L46 37.3333H50.6667"
+      stroke="white"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+  <defs>
+    <linearGradient id="paint0" x1="24" y1="22" x2="56" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF4B4B"/>
+      <stop offset="1" stop-color="#C60813"/>
+    </linearGradient>
+    <filter id="shadow" x="19" y="18" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="2" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+  </defs>
+</svg>

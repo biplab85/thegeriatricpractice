@@ -1,11 +1,13 @@
 import Image from "next/image";
 
 import AboutSection from "@/components/about-section";
+import CtaFourSection from "@/components/cta4-section";
 import HeroSection from "@/components/hero-section";
 import HowItWorksSection from "@/components/how-it-works-section";
 import LatestBlogSection from "@/components/latest-blog-section";
+import BottomFooter from "@/components/bottom-footer";
+import MarqueeSection from "@/components/marquee-section";
 import PartnersTeamSection from "@/components/partners-team-section";
-import SiteFooter from "@/components/site-footer";
 import SiteHeader from "@/components/site-header";
 import TestimonialSection from "@/components/testimonial-section";
 
@@ -27,6 +29,8 @@ export default function Home() {
 
       <HeroSection />
 
+      <MarqueeSection />
+
       <AboutSection />
 
       <PartnersTeamSection />
@@ -37,7 +41,9 @@ export default function Home() {
 
       <LatestBlogSection />
 
-      <SiteFooter />
+      <CtaFourSection />
+
+      <BottomFooter />
     </main>
   );
 }

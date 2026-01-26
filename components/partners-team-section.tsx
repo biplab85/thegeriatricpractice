@@ -116,9 +116,9 @@ export default function PartnersTeamSection() {
             <div className="top-mediic-section">
               <div className="mediic-section-title">
                 <h1>
-                  Meet Our Best
+                  Meet Our
                   <br />
-                  Doctors
+                  Partners
                 </h1>
               </div>
               <div className="counter-single-box bx-2">
