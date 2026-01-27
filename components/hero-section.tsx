@@ -5,7 +5,7 @@ import HeroVisual from "@/components/hero-visual";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 mx-auto mt-12 mb-20 grid max-w-6xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+    <section className="relative z-10 mx-auto mt-12 mb-20 grid max-w-6xl gap-10 px-4 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-0">
       <div className="animate-rise">
         <span className="inline-flex items-center gap-2 rounded-full border border-brand-gray bg-white/90 px-4 py-2 text-sm text-brand-shadow shadow-halo">
           <span className="h-2 w-2 rounded-full bg-brand-red shadow-[0_0_0_6px_rgba(198,8,19,0.15)]" />
@@ -51,7 +51,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <HeroVisual />
+      <div className="hidden lg:block">
+        <HeroVisual />
+      </div>
     </section>
   );
 }

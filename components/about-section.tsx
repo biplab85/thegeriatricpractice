@@ -22,18 +22,18 @@ export default function AboutSection() {
         <div className="row">
           <div className="col-lg-12">
             <div className="top-mediic-section">
-            <div className="mediic-section-title">
-              <h1>
-                About Medical
-                <span>
-                  <img
-                    src="/about/star.png"
-                    alt="Heart icon"
-                    aria-hidden="true"
-                  />
-                </span>
-              </h1>
-            </div>
+              <div className="mediic-section-title">
+                <h1>
+                  About Medical
+                  <span>
+                    <img
+                      src="/about/star.png"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </span>
+                </h1>
+              </div>
               <div className="counter-single-box bx-2">
                 <div className="odometer-wrapper counter-box-title">
                   <h1 className="odometer">10</h1>
@@ -48,13 +48,13 @@ export default function AboutSection() {
           <div className="col-lg-7">
             <div className="about-thumb">
               <img
-                src="https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/about.png"
+                src="/about/about.png"
                 alt="Medical specialists meeting"
               />
               <div className="thumbs-bxs">
                 <div className="icon">
                   <img
-                    src="https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/heart.png"
+                    src="/about/heart.png"
                     alt=""
                     aria-hidden="true"
                   />
@@ -67,7 +67,7 @@ export default function AboutSection() {
                     />
                     <text>
                       <textPath href="#about-circle-path" startOffset="0%">
-                        NEOROLOGIST * GYNOCLOGIST * HEALTHCARE *
+                        Senior Consultant Geriatrician * MBBS, MRCP (UK), FAMS
                       </textPath>
                     </text>
                   </svg>
@@ -77,10 +77,10 @@ export default function AboutSection() {
           </div>
           <div className="col-lg-5">
             <div className="mediic-section-title2">
-              <h4>ABOUT COMPANY</h4>
+              <h4>DR CHONG MEI SIAN</h4>
               <h3>
-                Since 2007 We're working Medical group of more than 1200+ Patients help from our
-                medical
+                GD (Clinical Epidemiology) (University of Newcastle, Australia)
+                Senior Consultant Geriatrician. Medical Director.
               </h3>
             </div>
             <div className="about-service-list">
@@ -88,26 +88,26 @@ export default function AboutSection() {
               <ul>
                 <li>
                   <CheckIcon />
-                  Completely to syndicate
+                  Senior Geriatric Specialist
                   <span className="list-pd">
                     <CheckIcon />
-                    24 Hrs Aumbulance Service
+                    20+ Years Experience
                   </span>
                 </li>
                 <li>
                   <CheckIcon />
-                  Medical Surgical Services
+                  Dementia Care Leader
                   <span className="list-pd">
                     <CheckIcon />
-                    100% Satisfaction Rate
+                    National Policy Contributor
                   </span>
                 </li>
                 <li className="border-style">
                   <CheckIcon />
-                  Instant Operations System
+                  Medical Research Author
                   <span className="list-pd">
                     <CheckIcon />
-                    Professional Doctors
+                    Holistic Elder Care
                   </span>
                 </li>
               </ul>

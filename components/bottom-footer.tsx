@@ -21,7 +21,7 @@ const contactItems = [
 export default function BottomFooter() {
   return (
     <section className="vl-footer4-section-area">
-      <div class="pointer-events-none absolute right-[-160px] top-[-180px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_35%_35%,rgba(255,255,255,0.8),rgba(198,8,19,0.12))] blur-[1px]"></div>
+      <div className="pointer-events-none absolute right-[-160px] top-[-180px] h-[520px] w-[520px] rounded-full bg-[radial-gradient(circle_at_35%_35%,rgba(255,255,255,0.8),rgba(198,8,19,0.12))] blur-[1px]"></div>
       <div className="container">
         <div className="vl-footer4-grid">
           <div className="vl-footer4-newsletter">
@@ -92,7 +92,7 @@ export default function BottomFooter() {
           </div>
         </div>
         <div className="vl-footer4-bottom-area">
-          <p>Copyright 2024 The Geriatric Practice. All rights reserved.</p>
+          <p>Copyright 2026 The Geriatric Practice. All rights reserved.</p>
           <div className="vl-footer4-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>

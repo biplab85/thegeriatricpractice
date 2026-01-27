@@ -541,6 +541,7 @@ p.counter-desc {
 .about-thumb img {
   width: 100%;
   display: block;
+  border-radius: 33px;
 }
 
 .thumbs-bxs {
@@ -593,7 +594,7 @@ p.counter-desc {
   font-size: 22px;
   font-weight: 600;
   padding: 30px 0 25px;
-  color: var(--mediic-primary);
+  color: #000;
 }
 
 .about-service-list ul {
@@ -625,6 +626,15 @@ span.list-pd {
   padding: 0 0 0 55px;
   display: inline-flex;
   align-items: center;
+}
+
+@media (max-width: 991px) {
+  span.list-pd {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
 }
 
 .text-circle {
@@ -699,9 +709,9 @@ span.list-pd {
   left: 0;
   top: 0;
   background-color: var(--mediic-secondary);
-  background-image: url("https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/mask-btn2.png");
-  -webkit-mask: url("https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/mask-btn2.png");
-  mask: url("https://html.tf.dreamitsolution.net/mediic1/assets/images/resource/mask-btn2.png");
+  background-image: url("/mask.png");
+  -webkit-mask: url("/mask.png");
+  mask: url("/mask.png");
   -webkit-mask-size: 2300% 100%;
   mask-size: 2300% 100%;
   animation: mask_animation_2 0.7s steps(22) forwards;
@@ -713,7 +723,7 @@ span.list-pd {
 }
 
 .mediic-btn a:hover {
-  color: var(--mediic-secondary);
+  color: #FFF;
 }
 
 .mediic-btn a svg {
@@ -769,8 +779,11 @@ span.list-pd {
   }
 
   .thumbs-bxs {
+    width: 150px;
+    height: 150px;
+    top: 0;
     right: 0;
-    left: 0;
+    line-height: 150px;
     margin: 0 auto;
   }
 
@@ -1691,7 +1704,7 @@ span.list-pd {
   font-size: 28px;
   font-weight: 600;
   font-family: "Clash Display", var(--font-display);
-  color: var(--mediic-secondary);
+  color: #000;
 }
 
 .vl-footer4-newsletter p {
@@ -1714,12 +1727,12 @@ span.list-pd {
   border-radius: 999px;
   border: 1px solid var(--mediic-secondary);
   background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  color: #000;
   font-size: 15px;
 }
 
 .vl-footer4-form input::placeholder {
-  color: var(--mediic-secondary);
+  color: #686868;
 }
 
 .vl-footer4-form button {
@@ -1747,7 +1760,8 @@ span.list-pd {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--mediic-secondary);
+  color: #000;
+  font-weight: 600;
 }
 
 .vl-footer4-links ul,
@@ -1781,7 +1795,7 @@ span.list-pd {
 
 .vl-footer4-contact-list .icon {
   display: inline-flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 36px;
   height: 36px;
@@ -1840,7 +1854,7 @@ span.list-pd {
 }
 
 .vl-footer4-bottom-links a:hover {
-  color: #fff;
+  color: var(--mediic-secondary);
 }
 
 @media (max-width: 991px) {
@@ -1874,6 +1888,19 @@ span.list-pd {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .thumbs-bxs {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    right: 0;
+    line-height: 150px;
+    margin: 0 auto;
+  }
+
+  .text-circle svg {
+    width: 114px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1889,6 +1916,10 @@ span.list-pd {
 
   .footer-section {
     padding: 90px 0 40px;
+  }
+
+  .team-section {
+    padding: 0;
   }
 
   .cta-content-area h2 {
@@ -1916,5 +1947,26 @@ span.list-pd {
   .vl-footer4-form {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .about-serction .mediic-shape,
+  .team-section .mediic-shape {
+    display: none;
+  }
+
+  .testimonial-layout {
+    display: inline;
+  }
+
+  .testimonial-media {
+    display: none;
+  }
+
+  .cta-circle-area {
+    display: none;
+  }
+
+  .vl-footer4-section-area .pointer-events-none {
+    display: none;
   }
 }
