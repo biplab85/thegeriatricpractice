@@ -24,7 +24,7 @@ export default function AboutSection() {
             <div className="top-mediic-section">
               <div className="mediic-section-title">
                 <h1>
-                  About Medical
+                  Our Specialist
                   <span>
                     <img
                       src="/about/star.png"
