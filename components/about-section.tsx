@@ -67,7 +67,7 @@ export default function AboutSection() {
                     />
                     <text>
                       <textPath href="#about-circle-path" startOffset="0%">
-                        Senior Consultant Geriatrician * MBBS, MRCP (UK), FAMS
+                        Senior Consultant Geriatrician * MBBS, MRCP (UK) * 
                       </textPath>
                     </text>
                   </svg>
